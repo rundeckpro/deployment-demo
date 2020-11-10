@@ -1,4 +1,4 @@
-require 'App'
+require './app.rb'
 require 'rack/test'
 
 describe App do
