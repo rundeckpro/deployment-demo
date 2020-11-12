@@ -1,5 +1,9 @@
-# Basic Readme for this demo app
+# Rundeck Demo Deployment Application
 
-## Headline
+## About this project
+
+This is a sample Sinatra application with just enough methods and testing to use in a CI/CD example demonstration. Feel free to contact us at hello@rundeck.com if you'd like to see all the parts moving together.
+
+
 
 Updated 11-12-20 at 6:19pm
