@@ -3,7 +3,7 @@ require 'sinatra/base'
 class App < Sinatra::Base
 
   get '/' do
-    "Rundeck Deployment Test App update"
+    "Rundeck Deployment Test App"
   end
 
   get '/testval' do
