@@ -1,5 +1,6 @@
 require './app.rb'
 require 'rack/test'
+require 'json'
 
 describe App do
   include Rack::Test::Methods
@@ -28,4 +29,16 @@ describe App do
     end
   end
 
+  context "GET to /dockerhub_tags with no image" do
+    it "returns 400" do
+      get '/dockerhub_tags'
+      expect(last_response.status).to eq 400
+    end
+
+    it "returns something like an array" do
+      get '/dockerhub_tags?image=khudgins/demosinatra'
+      expect(last_response.body).to be_a(String)
+      expect(JSON.parse(last_response.body)).to be_a(Array)
+    end
+  end
 end
