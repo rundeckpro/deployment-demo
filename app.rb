@@ -4,6 +4,8 @@ require 'json'
 
 class App < Sinatra::Base
 
+
+
   get '/' do
     "Rundeck Deployment Test App"
   end
@@ -13,6 +15,7 @@ class App < Sinatra::Base
   end
 
   get '/dockerhub_tags' do
+    content_type 'application/json'
     if params['image'] == nil || params['image'] == ""
       halt 400, "param 'image' required"
     end
