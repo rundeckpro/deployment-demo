@@ -33,6 +33,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bundler
   rack
   rake
   rspec
