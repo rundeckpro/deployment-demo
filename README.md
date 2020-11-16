@@ -11,4 +11,4 @@ There is one useful helper method in this application, /dockerhub_tags
 This method receives one GET parameter, *image*. The value of *image* should be a container path for Docker Hub. For example, if you're testing this container, you could use '?image=khudgins/sinatrademo' and the methor will return a JSON array of every tag path for that image on Docker Hub. This is useful in Rundeck as a URL for a remote option value. (See https://docs.rundeck.com/docs/manual/job-options.html#remote-option-values )
 
 
-Updated 11-13-20 at 7:01pm
+Updated 11-16-20 at 2:35pm
