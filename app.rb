@@ -7,7 +7,7 @@ class App < Sinatra::Base
 
 
   get '/' do
-    "Rundeck Deployment Test App<br />Hi Smartsheets+Rundeck It's Tuesday!"
+    "Rundeck Deployment Test App<br />Hi Rundeck, It's Friday!"
   end
 
   get '/testval' do
